@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_home2"
+        android:icon="@drawable/casa"
+        android:title="Inicio"
+        app:showAsAction="always" />
+    <item android:id="@+id/menu_buscar"
+        android:icon="@drawable/lupa"
+        android:title="Buscar"
+        app:showAsAction="always" />
+    <item android:id="@+id/menu_libros"
+        android:icon="@drawable/libro"
+        android:title="Biblioteca"
+        app:showAsAction="always" />
+    <item android:id="@+id/menu_lapiz"
+        android:icon="@drawable/lapiz"
+        android:title="Escribe"
+        app:showAsAction="always" />
+    <item android:id="@+id/menu_noti"
+        android:icon="@drawable/notificacion"
+        android:title="Notificaciones"
+        app:showAsAction="always" />
+
+</menu>

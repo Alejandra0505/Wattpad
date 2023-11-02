@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/home4">
+    <fragment
+        android:id="@+id/buscar"
+        android:name="com.example.wattpad.fragment.buscar"
+        tools:layout="@layout/fragment_buscar" >
+        <action
+            android:id="@+id/action_buscar_to_biblioteca"
+            app:destination="@id/biblioteca" />
+    </fragment>
+    <fragment
+        android:id="@+id/biblioteca"
+        android:name="com.example.wattpad.fragment.biblioteca"
+        tools:layout="@layout/fragment_biblioteca" >
+
+        <action
+            android:id="@+id/action_biblioteca_to_escribir"
+            app:destination="@id/escribir" />
+    </fragment>
+    <fragment
+        android:id="@+id/home4"
+        android:name="com.example.wattpad.fragmentos.home"
+        android:label="fragment_home2"
+        tools:layout="@layout/fragment_home2" >
+        <action
+            android:id="@+id/action_home4_to_buscar"
+            app:destination="@id/buscar" />
+    </fragment>
+    <fragment
+        android:id="@+id/escribir"
+        android:name="com.example.wattpad.fragmentos.escribir"
+        android:label="fragment_escribir"
+        tools:layout="@layout/fragment_escribir" >
+        <action
+            android:id="@+id/action_escribir_to_home4"
+            app:destination="@id/home4" />
+    </fragment>
+
+
+</navigation>
